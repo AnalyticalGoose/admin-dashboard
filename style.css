@@ -1,3 +1,269 @@
 * {
-    border: 2px solid red;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --blue: #1992d4;
+    --yellow: #f0b42a;
+    --grey: #d8dde2;
+}
+
+body {
+    margin: 0;
+    display: flex;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+img {
+    width: 3vh;
+    height: 3vh;
+}
+
+.dashboard > img {
+    width: 5vh;
+    height: 5vh;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    color: white;
+    background-color: var(--blue);
+    width: 20vw;
+    height: 100vh;
+    padding-left: 2vw;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 78vw;
+    height: 18vh;
+}
+
+.top-header,
+.bottom-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 9vh;
+}
+
+.top-header-right,
+.top-header-left {
+    display: flex;
+    gap: 2vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    align-items: center;
+}
+
+.bottom-header {
+    box-shadow: 1px 3px 5px rgb(180, 179, 179);
+}
+
+.search-bar {
+    background-color: var(--grey);
+    width: 40vw;
+    height: 2.5vh;
+    border: none;
+    border-radius: 50px
+}
+
+.welcome-user {
+    display: flex;
+    gap: 1vw;
+    padding-left: 2vw;
+}
+
+.welcome-user-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello-text {
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.user-handle {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.dashboard {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.top-links,
+.bottom-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.link {
+    display: flex;
+    gap: 1vw;
+}
+
+.buttons {
+    display: flex;
+    gap: 2vw;
+    padding-right: 3vw;
+}
+ 
+button {
+    background-color: var(--blue);
+    color: white;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    width: 7vw;
+    height: 4vh;
+}
+
+#user-img {
+    height: 7vh;
+    width: 7vh;
+    border-radius: 50%;
+}
+
+#user-img-small {
+    height: 4vh;
+    width: 4vh;
+    border-radius: 50%;
+}
+
+#bell {
+    height: 2.5vh;
+    width: 2.5vh;
+}
+
+.content {
+    display: flex;
+    width: 78vw;
+    height: 82vh;
+    background-color: var(--grey);
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    width: 23vw;
+}
+
+.announcements {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    margin: 2vw;
+    gap: 1vh;
+}
+
+.white-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 3vh;
+    gap: 2vh;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgb(151, 151, 151);
+}
+
+.sub-title {
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.subtext {
+    font-size: .6rem;
+    color: rgb(56, 56, 56)
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
+    margin: 0vw 2vw 2vw 2vw;
+    gap: 1vh;
+}
+
+.user-wrapper {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+
+.user-text-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-tag {
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    width: 55vw;
+    margin-left: 2vw;
+    margin-top: 2vw;
+    gap: 1vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vh;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 3vh;
+    gap: 1vh;
+    border-radius: 10px;
+    border-left: solid 7px var(--yellow);
+    height: 16.2vh;
+    box-shadow: 3px 5px 5px rgb(151, 151, 151);
+}
+
+.project-name {
+    font-size: .7rem;
+    color: rgb(56, 56, 56);
+}
+
+.project-title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.project-subtext {
+    font-size: .8rem;
+}
+
+.card-svgs {
+    display: flex;
+    justify-content: end;
+    margin-top: 2vh;
+    gap: 1.5vw;
+    scale: .9;
 }
